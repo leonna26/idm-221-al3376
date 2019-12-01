@@ -1,0 +1,126 @@
+/* CORE STYLES */
+:root {
+    --primary-color: rgba(172, 57, 57, 0.342);
+    --overlay-color: rgba(172, 57, 57, 0.541);
+    --menu-speed: 0.75s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+  }
+
+  .box {
+    background: white;
+    width: 200px;
+    margin: 100px;
+    border-width: 5px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+  }
+  
+  .showcase {
+    background: var(--primary-color);
+    color: #fff;
+    height: 80vh;
+    position: relative;
+  }
+  
+  .showcase .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .showcase h1 {
+    font-size: 4rem;
+  }
+  
+  .showcase p {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    border: none;
+    background: rgb(92, 32, 32);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+    width: 9.375rem;
+    transition: opacity 1s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    opacity: 0.7;
+  }
+
+  /* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* unvisited link */
+a:link {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgba(146, 40, 40, 0.75);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgba(146, 40, 40, 0.904);
+  }
+  /* Style the video: 100% width and height to cover the entire window */
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(146, 40, 40, 0.932);
+    color: white;
+    text-align: center;
+ }

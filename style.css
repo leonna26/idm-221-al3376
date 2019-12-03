@@ -70,14 +70,13 @@
     opacity: 0.7;
   }
 
-  /* Container holding the image and the text */
+  /* container holding the image and the text */
 .container {
     position: relative;
     text-align: center;
     color: white;
   }
   
-  /* Centered text */
   .centered {
     position: absolute;
     top: 50%;
@@ -85,27 +84,26 @@
     transform: translate(-50%, -50%);
   }
 
-  /* unvisited link */
 a:link {
-    color: rgb(255, 255, 255);
+    color: rgb(168, 80, 80);
+    cursor:pointer;
   }
   
-  /* visited link */
   a:visited {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(241, 235, 235, 0.85);
+    cursor:pointer;
   }
   
-  /* mouse over link */
   a:hover {
     color: rgba(146, 40, 40, 0.75);
+    cursor:pointer;
   }
   
-  /* selected link */
   a:active {
     color: rgba(146, 40, 40, 0.904);
   }
-  /* Style the video: 100% width and height to cover the entire window */
-#video {
+
+  #video {
     position: fixed;
     right: 0;
     bottom: 0;

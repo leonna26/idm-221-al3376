@@ -1,3 +1,22 @@
+/* styling for links*/
+
+a:link {
+  color: rgb(168, 80, 80);
+}
+
+a:visited {
+  color: rgba(241, 235, 235, 0.85);
+}
+
+a:hover {
+  color: rgba(146, 40, 40, 0.75);
+}
+
+a:active {
+  color: rgba(146, 40, 40, 0.904);
+}
+
+/* buttons for application page */
 .apply-button {
   display: inline-block;
   border: none;
@@ -9,12 +28,40 @@
   text-decoration: none;
   text-align: center;
  }
+
+/* buttons on home page */
+
+ .btn {
+  display: inline-block;
+  border: none;
+  background: rgb(92, 32, 32);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  width: 9.375rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
  
- :root {
-    --primary-color: rgba(172, 57, 57, 0.342);
-    --overlay-color: rgba(172, 57, 57, 0.568);
-    --menu-speed: 0.75s;
-  }
+ 
 
   /* affects hamburger menu line sizing */
   * {
@@ -40,84 +87,6 @@
     overflow: hidden;
     padding: 0 2rem;
   }
-  
-  .showcase {
-    background: rgba(153, 37, 37, 0.377);
-    color: #fff;
-    height: 95vh;
-    position: relative;
-  }
-  
-  .showcase .showcase-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-  }
-  
-  .showcase h1 {
-    font-size: 4rem;
-  }
-  
-  .showcase p {
-    font-size: 1.2rem;
-  }
-  
-  .btn {
-    display: inline-block;
-    border: none;
-    background: rgb(92, 32, 32);
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1.5rem;
-    width: 9.375rem;
-    transition: opacity 1s ease-in-out;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    opacity: 0.7;
-  }
-
-  /* container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  a:link {
-    color: rgb(168, 80, 80);
-  }
-  
-  a:visited {
-    color: rgba(241, 235, 235, 0.85);
-  }
-  
-  a:hover {
-    color: rgba(146, 40, 40, 0.75);
-  }
-  
-  a:active {
-    color: rgba(146, 40, 40, 0.904);
-  }
-
-  #video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
 
   .footer {
     position: absolute;
@@ -129,10 +98,8 @@
     color: white;
     text-align: center;
  }
- 
- 
 
-   /* styling for images*/
+/* styling for images*/
  .image {
   display: block;
   margin-left: auto;
@@ -140,4 +107,47 @@
   width: 100%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+:root {
+  --primary-color: rgba(172, 57, 57, 0.342);
+  --overlay-color: rgba(172, 57, 57, 0.568);
+  --menu-speed: 0.75s;
+}
+
+/* styling for home page section*/
+
+.showcase {
+  background: rgba(153, 37, 37, 0.377);
+  color: #fff;
+  height: 95vh;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+} 
+
+.showcase p {
+  font-size: 1.2rem;
+}  
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+
+/* styling for home page video*/
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }

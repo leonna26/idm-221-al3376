@@ -1,10 +1,22 @@
-/* CORE STYLES */
-:root {
+.apply-button {
+  display: inline-block;
+  border: none;
+  background: rgb(92, 32, 32);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin: 1.75rem;
+  width: 10rem;
+  text-decoration: none;
+  text-align: center;
+ }
+ 
+ :root {
     --primary-color: rgba(172, 57, 57, 0.342);
-    --overlay-color: rgba(172, 57, 57, 0.541);
+    --overlay-color: rgba(172, 57, 57, 0.568);
     --menu-speed: 0.75s;
   }
-  
+
+  /* affects hamburger menu line sizing */
   * {
     margin: 0;
     padding: 0;
@@ -15,11 +27,10 @@
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
   }
-
-  .box {
+ .box {
     background: white;
-    width: 200px;
-    margin: 100px;
+    width: 225px;
+    margin: 75px;
     border-width: 5px;
   }
   
@@ -31,9 +42,9 @@
   }
   
   .showcase {
-    background: var(--primary-color);
+    background: rgba(153, 37, 37, 0.377);
     color: #fff;
-    height: 80vh;
+    height: 95vh;
     position: relative;
   }
   
@@ -84,19 +95,16 @@
     transform: translate(-50%, -50%);
   }
 
-a:link {
+  a:link {
     color: rgb(168, 80, 80);
-    cursor:pointer;
   }
   
   a:visited {
     color: rgba(241, 235, 235, 0.85);
-    cursor:pointer;
   }
   
   a:hover {
     color: rgba(146, 40, 40, 0.75);
-    cursor:pointer;
   }
   
   a:active {
@@ -112,13 +120,24 @@ a:link {
   }
 
   .footer {
-    position: relative;
-    left: 0;
+    position: absolute;
     bottom: 0;
     height: 50px;
     width: 100%;
     padding: 15px;
-    background-color: rgba(146, 40, 40, 0.932);
+    background-color: rgb(99, 28, 28);
     color: white;
     text-align: center;
  }
+ 
+ 
+
+   /* styling for images*/
+ .image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
